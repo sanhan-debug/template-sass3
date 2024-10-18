@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&family=Roboto:wght@100;300;400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+header .navbar {
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  color: white;
+  font-size: 20px;
+}
+header ul a {
+  text-decoration: none;
+}
+
+#hero {
+  width: 100%;
+  background-image: url("https://preview.colorlib.com/theme/bizpro/images/home/slide-1.jpg.webp");
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#hero .header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  gap: 20px;
+}
+#hero .header-content h1 {
+  color: white;
+}
+#hero .header-content p {
+  color: white;
+}
+#hero button {
+  padding: 10px 20px;
+  color: wheat;
+  background: local;
+  border: 2px solid pink;
+}
+
+#about {
+  margin-top: 55px;
+}
+#about .about-header {
+  text-align: center;
+  font-size: 25px;
+  margin: 20px;
+}
+#about .about-header p {
+  font-size: 15px;
+  text-align: center;
+  align-items: center;
+  margin: 15px auto;
+  width: 500px;
+}
+#about .about-cards {
+  width: 70%;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#about .about-cards .about-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 25px;
+  gap: 25px;
+}
+#about .about-cards .about-card i {
+  align-items: center;
+  font-size: 60px;
+  border: 2px solid pink;
+  border-radius: 100%;
+  padding: 30px;
+}
+#about .about-cards .about-card button {
+  background: local;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 15px;
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    display: none;
+  }
+}

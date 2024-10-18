@@ -1,0 +1,52 @@
+#about {
+  margin-top: 55px;
+
+  .about-header {
+    text-align: center;
+    font-size: 25px;
+    margin:20px;
+    p {
+      font-size: 15px;
+      text-align: center;
+      align-items: center;
+      margin: 15px auto;
+      width: 500px;
+     
+     
+    }
+  }
+
+  .about-cards {
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+
+    .about-card {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 25px;
+      gap: 25px;
+
+      i {
+        align-items: center;
+        font-size: 60px;
+        border: 2px solid pink;
+        border-radius: 100%;
+        padding: 30px;
+      }
+
+      button {
+        background: local;
+        color: black;
+        border: 1px solid black;
+        padding: 10px 15px;
+      }
+    }
+  }
+}

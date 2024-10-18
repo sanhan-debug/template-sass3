@@ -1,0 +1,26 @@
+
+header{
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+    .navbar{
+        display: flex;
+        position: fixed;
+        justify-content: space-around;
+        align-items:center ;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        gap:30px;
+        color: white;
+            font-size: 20px;
+
+        a{
+            text-decoration: none;
+            
+        }
+    }
+}
