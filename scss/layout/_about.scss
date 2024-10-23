@@ -3,35 +3,34 @@
 
   .about-header {
     text-align: center;
-    font-size: 25px;
+    font-size: 15px;
     margin:20px;
+    
     p {
       font-size: 15px;
       text-align: center;
       align-items: center;
       margin: 15px auto;
-      width: 500px;
-     
+      width: 400px;
      
     }
   }
 
   .about-cards {
-    width: 70%;
+    width: 80%;
     margin: 0px auto;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
 
 
     .about-card {
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 100%;
-      margin: 25px;
-      gap: 25px;
+      // display: flex;
+      // justify-content: center;
+      width: 200px;
+      text-align: center;
+      margin: 18px;
+      // gap: 25px;
 
       i {
         align-items: center;
