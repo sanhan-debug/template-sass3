@@ -252,4 +252,228 @@ header ul a {
   .portfolio .filter-menu ul li {
     font-size: 0.9rem;
   }
+}
+
+.team-section {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+.team-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.team-section .container {
+  flex-wrap: wrap;
+  align-items: center;
+}
+.team-section .team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+  gap: 30px;
+}
+.team-section .team-grid .team-member {
+  text-align: center;
+}
+.team-section .team-grid .team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.team-section .team-grid .team-member h3 {
+  font-size: 1;
+}
+
+.about-section {
+  padding: 50px 0;
+  background-color: #150303;
+  color: #fff;
+}
+.about-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about-section .row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.about-section .col-left, .about-section .col-right {
+  flex: 1;
+  margin: 20px;
+}
+.about-section .col-left img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.about-section .col-right h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.about-section .col-right .skill-bar {
+  margin-bottom: 20px;
+}
+.about-section .col-right .skill-bar p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.about-section .col-right .skill-bar .bar {
+  background-color: #333;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.about-section .col-right .skill-bar .bar .progress {
+  height: 10px;
+  background-color: #e74c3c;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .col-right h2 {
+    text-align: center;
+  }
+}
+.clients-section {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+.clients-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.clients-section .container h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.clients-section .container h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #e74c3c;
+  margin: 10px auto;
+}
+.clients-section .container .intro {
+  font-size: 18px;
+  color: #777;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+.clients-section .container .client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.clients-section .container .client img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+.clients-section .container .client .client-quote {
+  font-size: 18px;
+  color: #555;
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+.clients-section .container .client .client-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .clients-section .container .client img {
+    width: 120px;
+    height: 120px;
+  }
+  .clients-section .container .client .client-quote {
+    font-size: 16px;
+    max-width: 90%;
+  }
+  .clients-section .container .client .client-name {
+    font-size: 18px;
+  }
+}
+.pricing-section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+.pricing-section .container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.pricing-section .container .pricing-plan {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.pricing-section .container .pricing-plan h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.pricing-section .container .pricing-plan .subtitle {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 20px;
+}
+.pricing-section .container .pricing-plan .price {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.pricing-section .container .pricing-plan .price span {
+  font-size: 14px;
+  color: #888;
+}
+.pricing-section .container .pricing-plan ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.pricing-section .container .pricing-plan ul li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+.pricing-section .container .pricing-plan .btn-buy {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.pricing-section .container .pricing-plan.basic {
+  border-top: 5px solid #f39c12;
+}
+.pricing-section .container .pricing-plan.advanced {
+  border-top: 5px solid #3498db;
+}
+.pricing-section .container .pricing-plan.premium {
+  border-top: 5px solid #2ecc71;
+}
+
+@media (max-width: 768px) {
+  .pricing-section .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricing-section .container .pricing-plan {
+    width: 80%;
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

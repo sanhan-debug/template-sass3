@@ -1,0 +1,72 @@
+.about-section {
+    padding: 50px 0;
+    background-color: #150303;
+    color: #fff;
+  
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  
+    .row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .col-left, .col-right {
+      flex: 1;
+      margin: 20px;
+    }
+  
+    .col-left img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+  
+    .col-right {
+      h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+  
+      .skill-bar {
+        margin-bottom: 20px;
+        
+        p {
+          display: flex;
+          justify-content: space-between;
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+  
+        .bar {
+          background-color: #333;
+          border-radius: 5px;
+          overflow: hidden;
+  
+          .progress {
+            height: 10px;
+            background-color: #e74c3c;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .col-right {
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+
+
+  
